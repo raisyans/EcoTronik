@@ -2,4 +2,14 @@
     <string name="app_name">eWaste</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profile</string>
+    <string name="ewastepoint_description">Total Eco Point</string>
+    <string name="ewaste_transaction_description">Transaksi</string>
+    <string name="greeting">Selamat Datang,</string>
+    <string name="notification">notification</string>
+    <string name="settings">settings</string>
+    <string name="scanner">Scanner</string>
+    <string name="form">Form</string>
+    <string name="edutron">EduTron</string>
+    <string name="redeem">Redeem</string>
+    <string name="history">History</string>
 </resources>
