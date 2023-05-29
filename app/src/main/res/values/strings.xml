@@ -15,4 +15,9 @@
     <string name="info">Info</string>
     <string name="greeting2">Halo,</string>
     <string name="label_name">Nama</string>
+    <string name="label_address">Alamat</string>
+    <string name="label_email">Email</string>
+    <string name="label_telp">No Telepon</string>
+    <string name="logout">Keluar</string>
+    <string name="title_edit_profile">Edit Profile</string>
 </resources>

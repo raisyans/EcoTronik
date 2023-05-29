@@ -6,43 +6,56 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.bangkit.ewaste.R
-import com.bangkit.ewaste.databinding.FragmentHomeBinding
+import androidx.navigation.Navigation
 import com.bangkit.ewaste.databinding.FragmentProfileBinding
-import com.bangkit.ewaste.ui.home.HomeViewModel
 
 class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
+    private lateinit var viewModel: ProfileViewModel
 
     companion object {
         fun newInstance() = ProfileFragment()
     }
-
-    private lateinit var viewModel: ProfileViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
 
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
+
         val root: View = binding.root
 
-        val textView: TextView = binding.textProfile
-        profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.user.observe(viewLifecycleOwner) {
+            binding.tvName.text = it.name
+            binding.tvContentName.text = it.name
+            binding.tvContentAddress.text = it.alamat
+            binding.tvContentEmail.text = it.email
+            binding.tvContentTelp.text = it.telp
+        }
+        binding.ibEditProfile.setOnClickListener {
+            val name = binding.tvContentName.text
+            val alamat = binding.tvContentAddress.text
+            val email = binding.tvContentEmail.text
+            val telp = binding.tvContentTelp.text
+            val action =
+                ProfileFragmentDirections
+                    .actionNavigationProfileToEditProfileFragment(
+                        name.toString(), alamat.toString(), email.toString(), telp.toString()
+                    )
+            Navigation.findNavController(view).navigate(action)
+        }
     }
 
     override fun onDestroyView() {

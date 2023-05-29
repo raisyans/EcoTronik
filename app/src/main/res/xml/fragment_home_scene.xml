@@ -11,7 +11,8 @@
     </Transition>
     <Transition
         motion:constraintSetStart="@+id/motion2"
-        motion:constraintSetEnd="@+id/motion3" >
+        motion:constraintSetEnd="@+id/motion3"
+        motion:duration="2000" >
         <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
 
@@ -34,8 +35,9 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="42dp"
-            motion:layout_constraintStart_toStartOf="parent">
+            android:layout_marginBottom="64dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498">
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
@@ -69,8 +71,9 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="42dp"
-            motion:layout_constraintStart_toStartOf="parent" >
+            android:layout_marginBottom="64dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498">
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
@@ -116,8 +119,9 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="42dp"
-            motion:layout_constraintStart_toStartOf="parent" >
+            android:layout_marginBottom="64dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498">
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
