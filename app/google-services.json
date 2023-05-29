@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880635363671",
+    "project_id": "ecotronik-5bc3a",
+    "storage_bucket": "ecotronik-5bc3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880635363671:android:09a9ccaae57b7785e4fe12",
+        "android_client_info": {
+          "package_name": "com.bangkit.ewaste"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_90QXwGhECO4S2aWvoQzGeK6_TeYnM6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
