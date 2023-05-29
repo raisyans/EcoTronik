@@ -109,6 +109,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:text="@string/ewastepoint_description" />
             </LinearLayout>
 
@@ -134,6 +135,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:text="@string/ewaste_transaction_description" />
             </LinearLayout>
 

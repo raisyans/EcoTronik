@@ -7,12 +7,12 @@
         motion:constraintSetStart="@id/motion1"
         motion:constraintSetEnd="@+id/motion2"
         motion:duration="2000" >
-        <OnSwipe />
+        <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
     <Transition
         motion:constraintSetStart="@+id/motion2"
         motion:constraintSetEnd="@+id/motion3" >
-        <OnSwipe />
+        <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
 
     <ConstraintSet android:id="@+id/motion1">

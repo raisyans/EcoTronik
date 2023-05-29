@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#438181</color>
-    <color name="primary_150">#D298BDBC</color>
+    <color name="primary">#7AA874</color>
+    <color name="primary_150">#267AA874</color>
     <color name="primary_400">#25A776</color>
     <color name="slate">#AAAAAA</color>
     <color name="slate_200">#D9D9D9</color>

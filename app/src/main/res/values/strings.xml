@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">eWaste</string>
+    <string name="app_name">EcoTronik</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profile</string>
     <string name="ewastepoint_description">Total Eco Point</string>
@@ -13,4 +13,6 @@
     <string name="redeem">Redeem</string>
     <string name="history">History</string>
     <string name="info">Info</string>
+    <string name="greeting2">Halo,</string>
+    <string name="label_name">Nama</string>
 </resources>
