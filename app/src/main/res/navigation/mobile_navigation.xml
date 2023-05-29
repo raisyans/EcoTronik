@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.bangkit.ewaste.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_postWasteActivity"
+            app:destination="@id/postWasteActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
@@ -45,5 +49,10 @@
             android:id="@+id/action_editProfileFragment_to_navigation_profile"
             app:destination="@id/navigation_profile" />
     </fragment>
+    <activity
+        android:id="@+id/postWasteActivity"
+        android:name="com.bangkit.ewaste.ui.post.PostWasteActivity"
+        android:label="activity_post_waste"
+        tools:layout="@layout/activity_post_waste" />
 
 </navigation>
