@@ -11,7 +11,8 @@ class ProfileViewModel : ViewModel() {
             "M. Fidyan Fatra Aldino",
             "Jl. Abdul Wahab Gg. Nangka RT.06 RW.04, Kel. Sawangan Baru, Kec. Sawangan, Kota Depok, Jawa Barat",
             "fatraaldino@gmail.com",
-            "087700345684"
+            "087700345684",
+            "user"
         )
     }
     val user: LiveData<User> = _user

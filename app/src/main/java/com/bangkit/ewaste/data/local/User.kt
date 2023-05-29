@@ -5,4 +5,5 @@ data class User(
     val alamat : String,
     val email : String,
     val telp : String,
+    val role : String,
 )
