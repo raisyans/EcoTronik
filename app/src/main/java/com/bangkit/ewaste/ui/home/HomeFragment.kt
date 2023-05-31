@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.bangkit.ewaste.R
 import com.bangkit.ewaste.databinding.FragmentHomeBinding
+import com.bangkit.ewaste.ui.customviews.CustomDialogFragment
 import com.bangkit.ewaste.utils.createCustomTempFile
 
 class HomeFragment : Fragment() {
@@ -42,7 +43,8 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnScanner.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_postWasteActivity)
+            val dialog = CustomDialogFragment()
+            dialog.show(parentFragmentManager, "customDialog")
         }
     }
 

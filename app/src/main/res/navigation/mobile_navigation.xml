@@ -11,8 +11,8 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_navigation_home_to_postWasteActivity"
-            app:destination="@id/postWasteActivity" />
+            android:id="@+id/action_navigation_home_to_cameraActivity"
+            app:destination="@id/cameraActivity" />
     </fragment>
 
     <fragment
@@ -54,5 +54,10 @@
         android:name="com.bangkit.ewaste.ui.post.PostWasteActivity"
         android:label="activity_post_waste"
         tools:layout="@layout/activity_post_waste" />
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="com.bangkit.ewaste.ui.post.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
 
 </navigation>

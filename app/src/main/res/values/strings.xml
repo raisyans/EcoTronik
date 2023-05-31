@@ -22,4 +22,7 @@
     <string name="title_edit_profile">Edit Profile</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setor">Setor</string>
+    <string name="to_home">Halaman Awal</string>
 </resources>
