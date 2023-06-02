@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.customviews.CustomDialogManualFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_24dp"
+    android:background="@drawable/background_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/tv_waste_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waste_category_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/option_waste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginStart="@dimen/dimen_32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_waste_category_label"
+        app:layout_constraintStart_toEndOf="@+id/tv_waste_category_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_waste_category_label" />
+
+    <TextView
+        android:id="@+id/tv_waste_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waste_count_label"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waste_category_label" />
+
+    <ImageButton
+        android:id="@+id/btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_circle_green"
+        android:src="@drawable/ic_min_12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_waste_count_label"
+        app:layout_constraintStart_toStartOf="@+id/option_waste"
+        app:layout_constraintTop_toTopOf="@+id/tv_waste_count_label"
+        android:contentDescription="@string/info" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_outline_primary"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:text="@string/waste_value"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_waste_count_label"
+        app:layout_constraintStart_toEndOf="@+id/btn_minus"
+        app:layout_constraintTop_toTopOf="@+id/tv_waste_count_label"
+        android:inputType="text"
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_circle_green"
+        android:src="@drawable/ic_add_12"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_waste_count_label"
+        app:layout_constraintStart_toEndOf="@+id/value"
+        app:layout_constraintTop_toTopOf="@+id/tv_waste_count_label"
+        android:contentDescription="@string/info" />
+
+    <Button
+        android:id="@+id/btn_post_waste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_outline_primary"
+        android:padding="@dimen/dimen_16dp"
+        android:text="@string/btn_add"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_waste_count_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

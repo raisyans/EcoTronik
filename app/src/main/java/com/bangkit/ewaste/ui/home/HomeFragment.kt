@@ -14,6 +14,7 @@ import androidx.navigation.Navigation
 import com.bangkit.ewaste.R
 import com.bangkit.ewaste.databinding.FragmentHomeBinding
 import com.bangkit.ewaste.ui.customviews.CustomDialogFragment
+import com.bangkit.ewaste.ui.form.FormActivity
 import com.bangkit.ewaste.utils.createCustomTempFile
 
 class HomeFragment : Fragment() {
@@ -45,6 +46,9 @@ class HomeFragment : Fragment() {
         binding.btnScanner.setOnClickListener {
             val dialog = CustomDialogFragment()
             dialog.show(parentFragmentManager, "customDialog")
+        }
+        binding.btnForm.setOnClickListener {
+            FormActivity.start(requireContext(), "manual")
         }
     }
 

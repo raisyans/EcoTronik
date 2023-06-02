@@ -9,6 +9,7 @@ object ConstVal {
     const val KEY_USER_NAME = "key.user.name"
     const val KEY_IS_LOGIN = "key.isLogin"
     const val KEY_EMAIL = "key.email"
+    const val KEY_FORM = "manual"
     const val KEY_SELECTED_IMAGE_URI = "key.image"
     const val CAMERA_X_RESULT = 200
     const val REQUEST_CODE_PERMISSIONS = 10

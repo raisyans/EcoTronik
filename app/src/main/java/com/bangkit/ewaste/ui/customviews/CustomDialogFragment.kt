@@ -1,6 +1,8 @@
 package com.bangkit.ewaste.ui.customviews
 
+import android.content.Context
 import android.content.Intent
+import android.graphics.Camera
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +14,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.NavHostFragment
 import com.bangkit.ewaste.R
+import com.bangkit.ewaste.ui.form.FormActivity
+import com.bangkit.ewaste.ui.post.CameraActivity
 import com.bangkit.ewaste.ui.post.PostWasteActivity
+import com.bangkit.ewaste.utils.ConstVal.KEY_FORM
 import com.bangkit.ewaste.utils.ConstVal.KEY_SELECTED_IMAGE_URI
 import com.bangkit.ewaste.utils.ConstVal.REQUEST_CODE
 import com.bangkit.ewaste.utils.uriToFile
@@ -38,8 +43,8 @@ class CustomDialogFragment : DialogFragment() {
         val cameraButton = view.findViewById<ImageButton>(R.id.btn_camera)
         val mediaButton = view.findViewById<ImageButton>(R.id.btn_media)
         cameraButton.setOnClickListener {
-            val navController = NavHostFragment.findNavController(this@CustomDialogFragment)
-            navController.navigate(R.id.action_navigation_home_to_cameraActivity)
+            val intent = Intent(context, CameraActivity::class.java)
+            startActivity(intent)
             dismiss()
         }
         mediaButton.setOnClickListener {
@@ -47,6 +52,7 @@ class CustomDialogFragment : DialogFragment() {
             intent.action = Intent.ACTION_GET_CONTENT
             intent.type = "image/*"
             val chooser = Intent.createChooser(intent, "Pilih Gambar")
+            intent.putExtra(KEY_FORM, "auto")
             launchIntentGallery.launch(chooser)
         }
     }
