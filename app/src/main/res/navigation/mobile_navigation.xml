@@ -59,5 +59,10 @@
         android:name="com.bangkit.ewaste.ui.post.CameraActivity"
         android:label="activity_camera"
         tools:layout="@layout/activity_camera" />
+    <activity
+        android:id="@+id/formActivity"
+        android:name="com.bangkit.ewaste.ui.form.FormActivity"
+        android:label="activity_form"
+        tools:layout="@layout/activity_form" />
 
 </navigation>

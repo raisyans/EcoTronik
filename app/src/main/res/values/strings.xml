@@ -25,4 +25,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="setor">Setor</string>
     <string name="to_home">Halaman Awal</string>
+    <string name="sum_waste">Total Sampah</string>
+    <string name="waste_point">Total Point</string>
+    <string name="ecowaste">%1$s Pcs</string>
+    <string name="ecopoint">%1$s EP</string>
+    <string name="result_title">Detail Transaksi</string>
+    <string name="label_transaction">No Transaksi</string>
+    <string name="label_date">Tanggal</string>
+    <string name="value_date">12 Mei 2023</string>
+    <string name="value_transaction">ET-AD28313</string>
+    <string name="waste_category_label">Kategori Sampah</string>
+    <string name="waste_count_label">Jumlah (pcs)</string>
+    <string name="btn_add">Tambah</string>
+    <string name="waste_value">0</string>
 </resources>

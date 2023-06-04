@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <string-array name="option_waste">
+        <item android:enabled="false" >Pilih</item>
+        <item>Handphone</item>
+        <item>Laptop</item>
+        <item>Televisi</item>
+        <item>Kipas Angin</item>
+        <item>Baterai</item>
+        <item>Lampu</item>
+        <item>Mouse</item>
+    </string-array>
+</resources>
