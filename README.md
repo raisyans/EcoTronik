@@ -1,14 +1,14 @@
 # Be more Eco Friendly with EcoTronik ♻️
 
 ## Our Team Members :
-We are C23-PS437 product-based capstone project team, consisting of 6 members in three learning paths as follows:<br />
-Machine Learning :
+We are C23-PS437 product-based capstone project team, consisting of 6 members in three learning paths as follows:
+#### Machine Learning :
  * M210DSX3282 - Baghas Trianto
- * M125DKY4536 - Liza Estu Mulyani<br />
-Cloud Computing :
+ * M125DKY4536 - Liza Estu Mulyani
+#### Cloud Computing :
  * C172DSY2664 - Salsabila Abiyyah Az'Zahra
- * C172DSY2702 - Raisya Nur Sabila<br />
-Mobile Development :
+ * C172DSY2702 - Raisya Nur Sabila
+#### Mobile Development :
  * A084DKY4480 - Widy Astuti
  * A084DKX4309 - M. Fidyan Fatra Aldino
 
