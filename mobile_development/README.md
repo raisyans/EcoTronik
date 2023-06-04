@@ -1,20 +1,19 @@
-<h2>Be more Eco Friendly with EcoTronik ♻️</h2>
+# Mobile Development Jobdesc
+Mobile development plays a crucial role in the creation and implementation of the User Interface (UI) and functionality within mobile applications. The following are several tasks undertaken by mobile developers:
 
+### UI Design
+1. Splash screen when opening the app for the first time
+2. Login page to enter the old user's email and password
+3. Register (Sign up) page to create a new account
+4. Home page that contains several features, such as scanner, form, history, redeem points, and user's total point information
+5. Camera page for users to take pictures 
+6. Camera scan result page that contains the type of electronic waste and the number of points to be earned
+7. Profile page that contains all of the informations about user, such as name, email address, address, profil picture, and log out button
+8. History page for a list of transactions the user has made
+9. The redeem point page contains a list of vouchers that users can claim using the points they have
 
-💚 Meet The team : 
-
-**Machine Learning**<br /><br />
-M210DSX3282 – Baghas Trianto<br />
-M125DKY4536 – Liza Estu Mulyani<br />
-<br />
-**Cloud Computing**<br /><br />
-C172DSY2664 – Salsabila Abiyyah Az'Zahra<br />
-C172DSY2702 – Raisya Nur Sabila<br />
-<br />
-**Mobile Development**<br /><br />
-A084DKY4480 – Widy Astuti<br />
-A084DKX4309 – M. Fidyan Fatra Aldino<br />
-
-🌍
-As the world becomes increasingly dependent on electronic devices, the amount of electronic waste (e-waste) generated is growing at an alarming rate. Out of a total of 2 million tons of electronic waste recorded by the Ministry of Environment and Forestry in 2021. In fact, only around 17.4% have been managed properly. The rest is still stored at home or goes into landfills and mixed with other types of waste. Disposal of e-waste in landfills poses a serious threat to the environment and human health due to the presence of toxic substances such as lead, mercury, and cadmium. Recycling e-waste is crucial for reducing the environmental impact and conserving valuable resources. However, the lack of awareness and easy access to e-waste recycling services remains a significant challenge. In this context, there is a need for a user-friendly and efficient e-waste recycling application that can connect users with nearby recycling facilities and provide information on the proper disposal and handling of e-waste. 🍀
-
+### Features
+1. Scanning with camera or from gallery to identify the type of electronic waste
+2. Form feature to input electronic waste manually without scanning the garbage
+3. Filter status on page history to see pending, successful, or failed transaction status
+4. Make changes to the contents of the personal profile on the profile page
