@@ -1,0 +1,126 @@
+////////////ACCOUNT////////////
+
+//CREATE USER
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+    "nama"          : "fatra aldino",
+    "email"         : "admin@gmail.com",
+    "password"      : "password",
+    "confPassword"  : "password",
+    "alamat"        : null,
+    "profile_image" : null,
+    "no_telp"       : null,
+    "role"          : "admin",
+    "jml_point"     : 0
+}
+
+###
+//GET USER 
+GET http://localhost:3000/users
+
+###
+//GET USER BY ID
+GET http://localhost:3000/users/0bb1a972-755d-434f-8f6a-9d0971d11940
+
+###
+//UPDATE USER
+PATCH http://localhost:3000/users/0bb1a972-755d-434f-8f6a-9d0971d11940
+Content-Type: application/json
+
+{
+    "nama": "admin",
+    "email": "admin@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "alamat": "apa ya",
+    "profile_image": "ucingg",
+    "no_telp": "081280159600",
+    "role": "admin",
+    "jml_point": 0
+}
+
+###
+//DELETE ACCOUNT
+DELETE http://localhost:3000/users/8c0f646b-749a-4571-9405-bd31d09db20f
+
+////////////AUTH////////////
+
+###
+//Login (Admin)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "password"
+}
+
+###
+//Login User (contoh dengan email usereco@gmail.com)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "usereco@gmail.com",
+    "password": "usereco123"
+}
+
+###
+//ME
+GET http://localhost:3000/me
+
+###
+//Logout
+DELETE http://localhost:3000/logout
+
+
+
+////////////ELEKTRONIK////////////
+
+###
+//Create Jenis_Sampah
+POST http://localhost:3000/elektronik
+Content-Type: application/json
+
+{
+    "jenis_elektronik" : "Mouse",
+    "point" : "5.000 EP"
+}
+
+###
+//Get Elektronik
+GET http://localhost:3000/elektronik
+
+###
+//Get ELektronik By Id
+GET http://localhost:3000/elektronik/3056cc9a-5734-495b-8e60-eb7ef89c1c9e
+
+###
+//Delete Jenis_Sampah (with id)
+DELETE http://localhost:3000/elektronik/442d850b-f050-457e-924d-0ec0289b963f
+
+
+/////////////////TRANSAKSI/////////////////
+
+###
+//Get Transaksi
+GET http://localhost:3000/transaksi
+
+###
+//Get Transaksi By Id
+GET http://localhost:3000/
+
+###
+//Post Transaksi
+POST http://localhost:3000/transaksi
+Content-Type: application/json
+
+{
+    "tgl_post": "2023-06-05",
+    "status" : "menunggu",
+    "jmlh": 2,
+    "userId" : "",
+    "elektronikId" : 6
+}
