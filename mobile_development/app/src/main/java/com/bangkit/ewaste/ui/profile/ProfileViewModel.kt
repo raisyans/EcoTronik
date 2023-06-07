@@ -3,7 +3,6 @@ package com.bangkit.ewaste.ui.profile
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.bangkit.ewaste.data.local.User
 
 class ProfileViewModel : ViewModel() {
     private val _user = MutableLiveData<User>().apply {

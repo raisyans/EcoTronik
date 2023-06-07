@@ -1,4 +1,7 @@
 package com.bangkit.ewaste.ui.post
 
-class PostWasteViewModel {
+import androidx.lifecycle.ViewModel
+import com.bangkit.ewaste.data.EcoRepository
+
+class PostWasteViewModel(ecoRepository: EcoRepository) : ViewModel() {
 }
