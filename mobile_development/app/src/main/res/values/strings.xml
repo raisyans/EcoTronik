@@ -38,7 +38,31 @@
     <string name="waste_count_label">Jumlah (pcs)</string>
     <string name="btn_add">Tambah</string>
     <string name="waste_value">0</string>
-    <string name="input_password">masukkan password</string>
-    <string name="must_not_empty">tidak boleh kosong</string>
-    <string name="more_then_eight_character">minimal 8 karakter</string>
+
+    <string name="title_history">Riwayat</string>
+    <string name="must_not_empty">Jangan dikosongkan</string>
+    <string name="more_then_eight_character">Password harus 8 Karakter</string>
+    <string name="input_password">Input Password</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="remind_me">Ingatkan saya</string>
+    <string name="forget_password">Lupa Password</string>
+    <string name="login_button">Login</string>
+    <string name="dont_have_account">Tidak punya Akun</string>
+    <string name="btn_registration">Registrasi</string>
+    <string name="title_Ecotronik_detail">Electronic Waste</string>
+    <string name="message_main_page">Thank you for using Ecotronik</string>
+
+    <string name="title_Ecotronik">EcoTronik</string>
+    <string name="title_signup_page">Registrasi</string>
+    <string name="registration_name">Nama</string>
+    <string name="name_hint">Nama</string>
+    <string name="registration_password">Password</string>
+    <string name="registration_email">Email</string>
+    <string name="registration_confirmation_password">Konfirmasi Password</string>
+    <string name="registration_button">Registrasi</string>
+    <string name="already_have_account">Sudah Punya Akun?</string>
+
+
+
 </resources>
