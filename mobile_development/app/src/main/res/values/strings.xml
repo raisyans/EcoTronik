@@ -38,4 +38,7 @@
     <string name="waste_count_label">Jumlah (pcs)</string>
     <string name="btn_add">Tambah</string>
     <string name="waste_value">0</string>
+    <string name="input_password">masukkan password</string>
+    <string name="must_not_empty">tidak boleh kosong</string>
+    <string name="more_then_eight_character">minimal 8 karakter</string>
 </resources>

@@ -52,6 +52,4 @@ class PasswordEditText : AppCompatEditText {
         errorMessage.value = message
     }
 
-    fun onInputValidation(hideErrorMessage: () -> Unit, setErrorMessage: (message: String) -> Unit) {
-    }
 }
