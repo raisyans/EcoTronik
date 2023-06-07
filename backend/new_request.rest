@@ -1,0 +1,19 @@
+# REGISTER (user)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "nama": "admin",
+    "email": "email2@gmail.com",
+    "password": "password123",
+    "confPassword": "password123"
+}
+
+# LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "password"
+}

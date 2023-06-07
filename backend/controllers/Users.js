@@ -27,16 +27,7 @@ export const getUserById = async (req, res) => {
 };
 
 export const createUser = async (req, res) => {
-  const {
-    nama,
-    email,
-    password,
-    confPassword,
-    alamat,
-    profile_image,
-    no_telp,
-    role,
-  } = req.body;
+  const { nama, email, password, confPassword } = req.body;
   if (password !== confPassword)
     return res
       .status(400)
@@ -47,10 +38,7 @@ export const createUser = async (req, res) => {
       nama: nama,
       email: email,
       password: hashPassword,
-      alamat: alamat,
-      profile_image: profile_image,
-      no_telp: no_telp,
-      role: role,
+      role: "user",
       jml_point: 0,
     });
     res.status(201).json({ msg: "Registrasi Berhasil" });
