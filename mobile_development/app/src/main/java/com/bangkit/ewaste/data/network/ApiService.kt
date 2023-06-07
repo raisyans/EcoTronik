@@ -13,5 +13,4 @@ interface ApiService {
         @Field("password") password : String
     ) : Call<LoginResponse>
 
-    @POST("")
 }

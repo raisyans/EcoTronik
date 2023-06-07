@@ -54,37 +54,16 @@ export const updateUser = async (req, res) => {
     },
   });
   if (!user) return res.status(404).json({ msg: "User tidak ditemukan" });
-  const {
-    nama,
-    email,
-    password,
-    confPassword,
-    alamat,
-    profile_image,
-    no_telp,
-    role,
-  } = req.body;
-  let hashPassword;
-  if (password === "" || password === null) {
-    hashPassword = user.password;
-  } else {
-    hashPassword = await argon2.hash(password);
-  }
-  if (password !== confPassword)
-    return res
-      .status(400)
-      .json({ msg: "Password dan Confirm password tidak cocok" });
+  const { nama, alamat, email, profile_image, no_telp, jml_point } = req.body;
   try {
     await Users.update(
       {
         nama: nama,
-        email: email,
-        password: hashPassword,
         alamat: alamat,
+        email: email,
         profile_image: profile_image,
         no_telp: no_telp,
-        role: role,
-        jml_point: 0,
+        jml_point: jml_point,
       },
       {
         where: {
